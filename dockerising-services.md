@@ -179,18 +179,18 @@ REDIRECT_URI=http://localhost:8000/api/google-auth/callback
 
 ```
 
-### Start everything:
-build and run the app:
+Build and run the app:
 ``` bash
 docker-compose up –build
 ```
 Start in background: ` docker-compose up -d --build `
 Scale workers (dev): ` docker-compose up -d --scale celery=3 `
+
 Tails logs:
 ```
 docker-compose logs -f web
 ```
-stop and remove: 
+Stop and remove: 
 ```
 docker-compose down 
 ```
